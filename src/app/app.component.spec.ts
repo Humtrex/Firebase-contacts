@@ -14,16 +14,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have the 'firebase-contacts' title`, () => {
+  it(`should have the 'angular-17-firebase-crud' title`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('firebase-contacts');
+    expect(app.title).toEqual('angular-17-firebase-crud');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, firebase-contacts');
+    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, angular-17-firebase-crud');
   });
 });
